@@ -17,7 +17,7 @@ Two RL algorithms are compared:
 - `deepseek-ai/deepseek-coder-1.3b-instruct`
 
 ### Dataset
-- **MBPP** (`mbpp.jsonl`) — Mostly Basic Python Problems
+- **MBPP** (`mbpp.jsonl`) — Mostly Basic Python Problems (974 problems total, included in repo)
   - Train: 350 examples
   - Validation: 50 examples
   - Test: 100 examples
@@ -72,6 +72,7 @@ Key hyperparameters:
 ASE/
 ├── grpo-asem.ipynb       # GRPO training (TRL-based)
 ├── pf-ppo-asem.ipynb     # Custom PF-PPO training from scratch
+├── mbpp.jsonl            # MBPP dataset (974 problems)
 └── README.md
 ```
 
@@ -89,7 +90,7 @@ accelerate >= 1.4
 datasets >= 3.0
 ```
 
-Dataset file must be placed at `/kaggle/input/asemjson/mbpp.jsonl`.
+The dataset `mbpp.jsonl` is included in this repository. When running on Kaggle, update the path in the notebooks from `/kaggle/input/asemjson/mbpp.jsonl` to the actual file location.
 
 ---
 
